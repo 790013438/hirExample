@@ -55,4 +55,22 @@ public class UserTest {
         User user = session.createQuery("from User u where u.username=:username", User.class).setParameter("username", "jack").getSingleResult();
         Assert.assertNotNull(user);
     }
+
+    @Test
+    public void testDelete() {
+        Session session = HibernateUtil.getSession();
+        session.beginTransaction();
+
+        User user = new User ();
+        user.setId(1);
+    }
+
+    @Test
+    public void testDeleteByUsername() {
+        Session session = HibernateUtil.getSession();
+        session.beginTransaction();
+
+        int affectedRows = session.createQuery("delete from User as u where u.id=:uid").setParameter("uid", 5).executeUpdate();
+        System.out.println(affectedRows);
+    }
 }
