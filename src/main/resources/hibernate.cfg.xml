@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE hibernate-configuration PUBLIC
-    "-//Hibernate/Hibernate Configuration DTD//EN"
-    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 
 <hibernate-configuration>
 
@@ -31,6 +29,7 @@
 
         <mapping class="snippets.hibernate.entity.User"/>
         <mapping class="snippets.hibernate.entity.Employee"/>
+        <mapping class="snippets.hibernate.entity.Department"/>
 
     </session-factory>
 
