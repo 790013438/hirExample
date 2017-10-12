@@ -3,6 +3,9 @@
     <persistence-unit name="hirExample" transaction-type="RESOURCE_LOCAL">
         <class>snippets.jee.jpa.Country</class>
         <class>snippets.jee.jpa.President</class>
+        <class>snippets.jee.jpa.Wife</class>
+        <class>snippets.jee.jpa.Husband</class>
+        <class>snippets.jee.jpa.Person</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa"/>
