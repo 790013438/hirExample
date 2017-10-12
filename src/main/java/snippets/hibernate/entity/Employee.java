@@ -8,7 +8,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 @Entity(name="tb_employee")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class Employee implements Serializable {
 
     private static final long serialVersionUID = 1L;
